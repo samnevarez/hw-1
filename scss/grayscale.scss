@@ -1,0 +1,55 @@
+// Variables
+
+$white: #fff !default;
+$black: #111 !default;
+
+$primary: #0000FF !default;
+
+/* $secondary #8080ff */
+$secondary: lighten($primary, 25%) !default;
+
+$primary-font: 'Oswald', sans-serif !default;
+$secondary-font: 'Open Sans', sans-serif !default;
+
+body {
+  background-color: $black;
+  font-family: $secondary-font;
+  color: $white;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.col-half {
+  display: flex;
+  width: 50%;
+  background: red;
+  padding: 16px 16px;
+}
+
+h1 {
+  font-family: $primary-font;
+  color: $white;
+}
+
+p {
+  font-family: $secondary-font;
+  font-size: 1rem;
+  color: $white !important;
+  line-height: 1.6rem;
+}
+
+header {
+  background: url('https://ga-shop-production-herokuapp-com.global.ssl.fastly.net/assets/images/homepage-hero-image_2BAvY.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header img {
+  width: 240px;
+  display: flex;
+}
